@@ -1,0 +1,6 @@
+# build.yaml
+build_from:
+  amd64: docker.io/triliumnext/notes:latest
+  aarch64: docker.io/triliumnext/notes:latest
+args:
+  BUILD_ARCH: "${BUILD_ARCH}"
