@@ -4,6 +4,8 @@
 
 This addon installs Trilium Notes, a hierarchical note-taking application focused on building a personal knowledge base. Trilium offers comprehensive note-taking capabilities with Markdown support, encryption, synchronization, and many other features.
 
+Read more on the project's page: [TriliumNext](https://github.com/TriliumNext/Notes)
+
 
 
 ## Installation
