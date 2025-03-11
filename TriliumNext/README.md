@@ -1,21 +1,19 @@
+![128x128](https://github.com/user-attachments/assets/7b39fd05-4c0d-46f3-8283-117e2093f3e3)
+
 # Trilium Notes for Home Assistant
 
 ## About
 
 This addon installs Trilium Notes, a hierarchical note-taking application focused on building a personal knowledge base. Trilium offers comprehensive note-taking capabilities with Markdown support, encryption, synchronization, and many other features.
 
-Read more on the project's page: [TriliumNext](https://github.com/TriliumNext/Notes)
-
-
 
 ## Installation
- [![Open this add-on in your Home Assistant instance.][addon-badge]][addon]
 
 1. Add repository to your Home Assistant addon repositories:
    - Navigate to **Settings** → **Add-ons** → **Add-on Store**
    - Click the three-dot menu in the top right
    - Select **Repositories**
-   - Add this repository URL: `https://github.com/HyperCriSiS/TriliumNext-Home-Assistant-Addon`
+   - Add this repository URL: `https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/HyperCriSiS/Home-Assistant-Addons`
    - Click **Add**
 
 2. Find the "Trilium Notes" addon and install it.
