@@ -36,6 +36,7 @@ When running for the first time, Trilium Notes will show a setup screen. Please 
 |--------|-------------|---------|
 | `timezone` | Timezone for the addon | `Europe/Berlin` |
 | `log_level` | Log level (trace/debug/info/warning/error) | `info` |
+| `https_only` | Force HTTPS connections only | `false` |
 
 ## Data Storage
 
