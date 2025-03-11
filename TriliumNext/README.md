@@ -7,6 +7,7 @@ This addon installs Trilium Notes, a hierarchical note-taking application focuse
 
 
 ## Installation
+ [![Open this add-on in your Home Assistant instance.][addon-badge]][addon]
 
 1. Add repository to your Home Assistant addon repositories:
    - Navigate to **Settings** → **Add-ons** → **Add-on Store**
