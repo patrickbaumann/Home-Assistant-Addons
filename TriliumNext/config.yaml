@@ -2,7 +2,7 @@
 name: "Trilium Notes"
 version: "v2025.03.12"
 slug: trilium_next
-description: "Hierarchical note-taking application"
+description: "Hierarchical note-taking application with encryption, Markdown support, and personal knowledge base features"
 url: "https://github.com/triliumnext/trilium"
 ingress: true
 ingress_port: 8080
@@ -25,9 +25,11 @@ ports:
 options:
   timezone: "Europe/Berlin"
   log_level: "info"
+	https_only: false
 schema:
   timezone: "str"
   log_level: "list(trace|debug|info|warning|error)"
+	https_only: "bool"
 environment:
   TRILIUM_DATA_DIR: "/home/node/trilium-data"
   TZ: "{{ options.timezone }}"
