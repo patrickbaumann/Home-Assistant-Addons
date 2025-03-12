@@ -25,11 +25,11 @@ ports:
 options:
   timezone: "Europe/Berlin"
   log_level: "info"
-	https_only: "false"
+  https_only: "false"
 schema:
   timezone: "str"
   log_level: "list(trace|debug|info|warning|error)"
-	https_only: "bool"
+  https_only: "bool"
 environment:
   TRILIUM_DATA_DIR: "/home/node/trilium-data"
   TZ: "{{ options.timezone }}"
