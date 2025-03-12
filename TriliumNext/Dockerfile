@@ -14,7 +14,7 @@ RUN chmod a+x /run.sh
 # Set proper permissions
 RUN mkdir -p /home/node/trilium-data && \
     chown -R node:node /home/node/trilium-data && \
-    chmod -R 750 /home/node/trilium-data
+    chmod -R 755 /home/node/trilium-data
 
 # Home Assistant requires this labels
 LABEL \
