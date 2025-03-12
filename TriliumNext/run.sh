@@ -17,6 +17,6 @@ export TRILIUM_BASE_URL="/api/hassio_ingress/${HOSTNAME}"
 export TRILIUM_ROOT_PATH="${TRILIUM_BASE_URL}"
 
 # Change to app directory and start with proper host binding
-cd "$APP_DIR" || { echo "ERROR: Application directory not found"; exit 1; }
+cd "$APP_DIR"
 echo "Starting Trilium with ingress configuration..."
 exec su -s /bin/sh -c "node src/main --host 0.0.0.0 --port 8080" node
