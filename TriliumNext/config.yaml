@@ -4,7 +4,6 @@ version: "latest"
 slug: trilium_next
 description: "Hierarchical note-taking application"
 url: "https://github.com/triliumnext/trilium"
-image: "icon.png"
 ingress: true
 ingress_port: 8080
 ingress_stream: true
