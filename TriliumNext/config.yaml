@@ -1,6 +1,6 @@
 ---
-name: "Trilium Notes"
-version: "v2025.03.11"
+name: "Trilium Next"
+version: "v2025.03.12"
 slug: trilium_next
 description: "Hierarchical note-taking application with encryption, Markdown support, and personal knowledge base features"
 url: "https://github.com/triliumnext/trilium"
@@ -25,7 +25,7 @@ ports:
 options:
   timezone: "Europe/Berlin"
   log_level: "info"
-  https_only: false
+  https_only: "false"
 schema:
   timezone: "str"
   log_level: "list(trace|debug|info|warning|error)"

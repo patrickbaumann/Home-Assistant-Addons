@@ -2,7 +2,6 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 # Install bash if needed (uncomment if you want bash available)
-# RUN apk add --no-cache bash
 
 # Set shell
 SHELL ["/bin/sh", "-c"]
@@ -10,6 +9,10 @@ SHELL ["/bin/sh", "-c"]
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
+
+# Create node user
+RUN adduser -D -g '' node
+
 
 # Set proper permissions
 RUN mkdir -p /home/node/trilium-data && \
@@ -26,6 +29,8 @@ LABEL \
 
 # Expose the port
 EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s \
+  CMD wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1
 
 # Set entrypoint
 ENTRYPOINT ["/run.sh"]
