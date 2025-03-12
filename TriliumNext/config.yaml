@@ -25,7 +25,7 @@ ports:
 options:
   timezone: "Europe/Berlin"
   log_level: "info"
-	https_only: false
+	https_only: "false"
 schema:
   timezone: "str"
   log_level: "list(trace|debug|info|warning|error)"
