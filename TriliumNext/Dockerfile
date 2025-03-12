@@ -2,7 +2,6 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 # Install bash if needed (uncomment if you want bash available)
-# RUN apk add --no-cache bash
 
 # Set shell
 SHELL ["/bin/sh", "-c"]
@@ -30,5 +29,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s \
   CMD wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1
 
 # Set entrypoint
-USER node
 ENTRYPOINT ["/run.sh"]

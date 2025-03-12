@@ -6,11 +6,6 @@ mkdir -p /home/node/trilium-data
 chown -R node:node /home/node/trilium-data
 chmod -R 755 /home/node/trilium-data
 
-if [ ! -w "/home/node/trilium-data" ]; then
-  echo "ERROR: Data directory is not writable. Check permissions."
-  exit 1
-fi
-
 echo "Starting Trilium Next..."
 echo "Web interface available at: http://$(hostname):8080"
 
