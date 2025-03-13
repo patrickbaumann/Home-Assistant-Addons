@@ -1,8 +1,6 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Install bash if needed (uncomment if you want bash available)
-
 # Set shell
 SHELL ["/bin/sh", "-c"]
 
@@ -10,18 +8,9 @@ SHELL ["/bin/sh", "-c"]
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-# Create node user
-RUN adduser -D -g '' node
-
-
-# Set proper permissions
-RUN mkdir -p /home/node/trilium-data && \
-    chown -R node:node /home/node/trilium-data && \
-    chmod -R 755 /home/node/trilium-data
-
-# Home Assistant requires this labels
+# Home Assistant requires these labels
 LABEL \
-    io.hass.name="Trilium Notes" \
+    io.hass.name="TriliumNext Notes" \
     io.hass.description="Hierarchical note-taking application" \
     io.hass.version="${BUILD_VERSION}" \
     io.hass.type="addon" \

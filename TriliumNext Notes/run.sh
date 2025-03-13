@@ -6,7 +6,7 @@ mkdir -p /home/node/trilium-data
 chown -R node:node /home/node/trilium-data
 chmod -R 755 /home/node/trilium-data
 
-echo "Starting Trilium Next..."
+echo "Starting TriliumNext Notes..."
 echo "Web interface available at: http://$(hostname):8080"
 
 # Use the known app path
@@ -18,5 +18,6 @@ export TRILIUM_ROOT_PATH="${TRILIUM_BASE_URL}"
 
 # Change to app directory and start with proper host binding
 cd "$APP_DIR"
-echo "Starting Trilium with ingress configuration..."
+echo "Starting TriliumNext Notes with ingress configuration..."
 exec su -s /bin/sh -c "node src/main --host 0.0.0.0 --port 8080" node
+
