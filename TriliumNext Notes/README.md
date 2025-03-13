@@ -1,5 +1,7 @@
 ![128x128](https://github.com/user-attachments/assets/7b39fd05-4c0d-46f3-8283-117e2093f3e3)
 
+# currently broken please wait for update (soon) 
+
 # TriliumNext Notes for Home Assistant
 
 ## About
