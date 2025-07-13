@@ -1,5 +1,8 @@
 # Changelog
 
+# v0.95.0
+- Bumped to latest version
+
 # v2025.03.13
 - Changed timezone and log-level options
 - New Logo with proper name
