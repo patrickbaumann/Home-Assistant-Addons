@@ -19,5 +19,8 @@ export TRILIUM_ROOT_PATH="${TRILIUM_BASE_URL}"
 # Change to app directory and start with proper host binding
 cd "$APP_DIR"
 echo "Starting TriliumNext Notes with ingress configuration..."
-exec su -s /bin/sh -c "node src/main --host 0.0.0.0 --port 8080" node
+[ ! -z "${USER_UID}" ] && usermod -u ${USER_UID} node || echo "No USER_UID specified, leaving 1000"
+[ ! -z "${USER_GID}" ] && groupmod -og ${USER_GID} node || echo "No USER_GID specified, leaving 1000"
 
+chown -R node:node /home/node
+exec su -c "node ./main.cjs" node
