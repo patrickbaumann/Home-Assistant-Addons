@@ -12,7 +12,7 @@ This addon installs TriliumNext Notes, a hierarchical note-taking application fo
 1. Add repository to your Home Assistant addon repositories:
 
 
-   [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FHyperCriSiS%2FHome-Assistant-Addons)
+   [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%patrickbaumann%2FHome-Assistant-Addons)
    - Click **Add**
 
 3. Find the "TriliumNext Notes" addon and install it.
@@ -70,7 +70,7 @@ During initial setup and in some dialogs, TriliumNext Notes might show the incor
 
 ## Support
 
-For issues or questions related to the addon, please create an issue in the [GitHub](https://github.com/HyperCriSiS/TriliumNext-Home-Assistant-Addon) repository.
+For issues or questions related to the addon, please create an issue in the [GitHub](https://github.com/patrickbaumann/TriliumNext-Home-Assistant-Addon) repository.
 
 ## License
 
