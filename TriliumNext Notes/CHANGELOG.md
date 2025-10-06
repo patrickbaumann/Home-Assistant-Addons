@@ -1,5 +1,8 @@
 # Changelog
 
+# v0.99.1
+- Bumped to latest version
+
 # v0.97.1
 - Bumped to latest version
 
