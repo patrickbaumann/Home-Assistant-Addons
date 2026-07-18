@@ -1,5 +1,8 @@
 # Changelog
 
+# v0.104.0
+- Bumped to latest version
+
 # v0.101.3
 - Bumped to latest version
 
