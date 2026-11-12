@@ -1,5 +1,8 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=docker.io/triliumnext/trilium:v0.107.0
 FROM ${BUILD_FROM}
+
+ARG BUILD_VERSION
+ARG BUILD_ARCH
 
 # Set shell
 SHELL ["/bin/sh", "-c"]
@@ -19,7 +22,7 @@ LABEL \
 # Expose the port
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s \
-  CMD wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1
+  CMD sh /usr/src/app/docker_healthcheck.sh || exit 1
 
 # Set entrypoint
 ENTRYPOINT ["/run.sh"]
